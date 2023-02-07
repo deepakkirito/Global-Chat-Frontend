@@ -73,6 +73,7 @@ function GlobalChat() {
             alert('!!!Wrong CAPTCHA!!!--<*Enter again*>');
         }
     }
+    
 
     if (!chatRoom) {
 
@@ -103,7 +104,6 @@ function GlobalChat() {
                 <br />
                 <button
                     onClick={enterChatRoom}
-                    onKeyup={test}
                     disabled={disabled}
                 >Enter</button>
             </div>
