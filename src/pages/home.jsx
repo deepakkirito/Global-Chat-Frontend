@@ -2,7 +2,7 @@ import * as React from "react";
 import {useState, useEffect} from 'react';
 import socketClient from 'socket.io-client';
 
-const socketUrl = 'globalchat-backend.onrender.com/';
+const socketUrl = 'erratic-tungsten-report.glitch.me/';
 const socket = socketClient(socketUrl);
 
 function GlobalChat() {
