@@ -19,7 +19,7 @@ function GlobalChat() {
 
     socket.on('captcha-data', data => {
         setCaptchaData(data.split(' '));
-        console.log(data.split(' '));
+        // console.log(data.split(' '));
       
     })
 
