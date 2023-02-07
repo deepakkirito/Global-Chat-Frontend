@@ -4,9 +4,7 @@
   "description": "A simple React app built with Vite and React.",
   "main": "server.js",
   "scripts": {
-    "start": "vite",
-    "build": "vite build",
-    "serve": "vite preview"
+    "start": "node server.js,
   },
   "dependencies": {
     "react": "^18.2.0",
