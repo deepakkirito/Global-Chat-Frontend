@@ -1,21 +1,20 @@
 import * as React from "react";
+import {useState} from 'react';
+import socketClient from 'socket.io-client';
+
+const socketUrl = 'erratic-tungsten-report.glitch.me/';
+const socket = socketClient(socketUrl);
 
 export default function Home() {
-  const hello = "Hello React!";
+  const [message, setMessage] = useState('null');
+  
+  socket.on('test', data => {
+    setMessage(data);
+  })
 
   return (
     <>
-      <h1 className="title">{hello}</h1>
-      <p>
-        This starter gives you everything you need to start working on a new
-        React project, and nothing more. If you're looking for something with
-        more options included out of the box, try remixing
-        {" "}
-        <a href="https://glitch.com/edit/#!/remix/glitch-hello-react">
-          ~glitch-hello-react
-        </a>
-        .
-      </p>
+     <p>{message}</p>
     </>
   );
 }
