@@ -103,6 +103,7 @@ function GlobalChat() {
                 <br />
                 <button
                     onClick={enterChatRoom}
+                    onKeyup={test}
                     disabled={disabled}
                 >Enter</button>
             </div>
