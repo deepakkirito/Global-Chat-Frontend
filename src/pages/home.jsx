@@ -2,7 +2,7 @@ import * as React from "react";
 import {useState, useEffect} from 'react';
 import socketClient from 'socket.io-client';
 
-const socketUrl = 'erratic-tungsten-report.glitch.me/';
+const socketUrl = 'globalchat-backend.onrender.com/';
 const socket = socketClient(socketUrl);
 
 function GlobalChat() {
@@ -90,7 +90,7 @@ function GlobalChat() {
                 <>
                     <img
                         src={captchaData[1]}
-                        alt='Verification Text'
+                        alt='Can take upto 30s to load the image'
                         title='Verification Text'
                     ></img>
                     <br />
